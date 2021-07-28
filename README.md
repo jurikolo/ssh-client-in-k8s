@@ -7,3 +7,8 @@ With this container, you can connect to a pod and jump to another host using SSH
 ```bash
 kubectl run mypod -i --rm --image=jurikolo/ssh-client-in-k8s:0.0.1
 ```
+
+To connect to a server, enter following command:
+```bash
+ssh -tt -o StrictHostKeyChecking=no -i /root/.ssh/private_key_rsa root@1.2.3.4
+```
